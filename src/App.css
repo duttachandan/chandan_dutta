@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+    overflow-x:hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.heroH1{
+    background:linear-gradient(90deg, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0.2) 120%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.heroImg{
+    animation:keyUp ease-in-out infinite 5s;
+}
+
+@keyframes keyUp {
+    0%,100%{
+        transform:translateY(10px);
+    }
+    50%{
+        transform:translateY(-10px)
+    }
+}
+
+.topBlur{
+    position:absolute;
+    height:50vh;
+    width:80vw;
+    top:0;
+    left:20vw;
+    border:764px;
+    background:rgba(105, 149, 232, 0.6);
+    /* background-color: black; */
+    filter: blur(400px);
+    z-index: 1;
+}
+.cards{
+    background-size: 0 0;
+    transition: 0.8s ease-out;
+    transition-delay:0.5s;
+}
+.cards:hover{
+    background-size:100% 100%;
+    background: linear-gradient(90deg, rgba(165,215,232,0.4)0%, rgb(255,255, 250, 0)100%);
+}
+
